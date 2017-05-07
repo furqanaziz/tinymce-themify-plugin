@@ -81,7 +81,7 @@
       win = editor.windowManager.open({
         title: 'Themify Icons',
         type: 'container',
-        url: 'icon-template.html',
+        url: 'bower_components/tinymce-themify-plugin/icon-template.html',
         // html: gridHtml,
         spacing: 10,
         padding: 10,

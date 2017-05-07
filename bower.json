@@ -18,6 +18,7 @@
     "mode/*/*.html"
   ],
   "dependencies": {
+	"angular-ui-tinymce": "^0.0.18",
     "themify-icons": "^0.1.2"
   }
 }
