@@ -1,7 +1,7 @@
 {
   "name": "tinymce-themify-plugin",
   "main": [
-    "tinymceIcons.js",
+    "tinymce-icons.js",
 	"bower_components/themify-icons/css/themify-icons.css"
   ],
   "ignore": [
