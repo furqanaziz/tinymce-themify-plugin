@@ -33,8 +33,14 @@
     position: relative;
     width: 100%;
   }
+  .search{
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+  }
 </style>
 <section class="section white icons-list">
+  <input type="text" name="search" id="search" onkeyup="searchIcon()" class="search" placeholder="Search icons"/>
   <div class="pagewidth">
     <div class="icon-section">
       <h3>Arrows &amp; Direction Icons </h3>
@@ -1173,6 +1179,20 @@
   var editor = top.tinymce.activeEditor;
   var win = editor.windowManager;
   var icons = document.querySelectorAll('.icon-container .icon-name');
+  var iconContainer = document.querySelectorAll('.icon-container');
+
+  /* function */
+  function searchIcon(){
+    var val = document.getElementById("search").value;
+    for (i = 0; i < icons.length; i++) {
+      iconContainer[i].style.display = 'block';
+    }
+    for (i = 0; i < icons.length; i++) {
+      if(icons[i].innerHTML.search(val) == -1){
+        iconContainer[i].style.display = 'none';
+      }
+    }
+  }
   for (i = 0; i < icons.length; i++) {
     icons[i].addEventListener('dblclick', function(e) {
       editor.insertContent(
