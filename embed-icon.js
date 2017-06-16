@@ -2,7 +2,7 @@ var editor = top.tinymce.activeEditor;
 var win = editor.windowManager;
 var icons = document.querySelectorAll('.icon-container .icon-name');
 var iconContainer = document.querySelectorAll('.icon-container');
-
+document.getElementById("search").addEventListener("keyup", searchIcon);
 /* function */
 function searchIcon(){
 	var val = document.getElementById("search").value;
