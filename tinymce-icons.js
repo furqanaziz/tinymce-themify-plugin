@@ -23,7 +23,7 @@
     editor.addCommand('showThemifyIcons', showDialog);
 
     editor.addButton('themifyIconsBtn', {
-      text: 'Icons',
+      icon: 'themifyIconsBtn',
       tooltip: 'themify icons',
       cmd: 'showThemifyIcons',
     });
